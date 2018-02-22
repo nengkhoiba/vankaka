@@ -1,0 +1,15 @@
+x<IfModule mod_rewrite.c>
+        RewriteEngine On
+
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.airaworld.com/$1 [R,L]
+
+        # Removes index.php
+     RewriteEngine on
+RewriteCond $1 !^(index\.php|images|css|fonts|media|js|datatables|font-awesome|fullcalendar|fileUploadCVS|maskedcv|cap|ViewerJS|robots\.txt)
+
+RewriteRule ^(.*)$ /index.php?$1 [L]
+
+        # If 404s, "No Input File" or every URL returns the same thing
+        # make it /index.php?/$1 above (add the question mark)
+</IfModule> 
