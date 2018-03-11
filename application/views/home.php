@@ -1,449 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
+  <?php $this->load->view('global/header.php');?>
+<?php $this->load->view('global/menu');?>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-head-line">Log in or Sign Up</h4>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Van Kaka</title>
-	<meta name="description" content="Van Kaka Description" />
-	<meta name="keywords" content="Van service,Van,School" />
-	<meta name="author" content="Nengkhoiba Chungkham" />
-	<link rel="apple-touch-icon" sizes="57x57" href="<?php echo base_url();?>assets/img/favicons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="<?php echo base_url();?>assets/img/favicons/apple-touch-icon-60x60.png">
-	<link rel="icon" type="image/png" href="<?php echo base_url();?>assets/img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="<?php echo base_url();?>assets/img/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="<?php echo base_url();?>assets/img/favicons/manifest.json">
-	<link rel="shortcut icon" href="<?php echo base_url();?>assets/img/favicons/favicon.ico">
-	<!-- Normalize -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/normalize.css">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap.css">
-	<!-- Owl -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/owl.css">
-	<!-- Animate.css -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/animate.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/fonts/font-awesome-4.1.0/css/font-awesome.min.css">
-	<!-- Elegant Icons -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/fonts/eleganticons/et-icons.css">
-	<!-- Main style -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/cardio.css">
-</head>
+                </div>
 
-<body>
-	<div class="preloader">
-		<img src="<?php echo base_url();?>assets/img/loader.gif" alt="Preloader image">
-	</div>
-	<nav class="navbar">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img style="width: 60px" src="<?php echo base_url();?>assets/img/vanlogo.svg" data-active-url="<?php echo base_url();?>assets/img/vanlogo.svg" alt=""></a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#intro">Intro</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#team">Team</a></li>
-					<li><a href="#pricing">Pricing</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
-	<header id="intro">
-		<div class="container">
-			<div class="table">
-				<div class="header-text">
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<h3 class="light white">Van Kaka</h3>
-							<h1 class="white typed">Your own family..</h1>
-							<span class="typed-cursor">|</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<section>
-		<div class="cut cut-top"></div>
-		<div class="container">
-			<div class="row intro-tables">
-				<div class="col-md-4">
-					<div class="intro-table intro-table-first">
-						<h5 class="white heading">Today's Schedule</h5>
-						<div class="owl-carousel owl-schedule bottom">
-							<div class="item">
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Early Exercise</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Muscle Building</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Cardio</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Early Exercise</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Muscle Building</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Cardio</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Early Exercise</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Muscle Building</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Cardio</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">Premium Membership</h5>
-						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Register Today</h4>
-							<h4 class="white heading small-pt">20% Discount</h4>
-							<a href="#" class="btn btn-white-fill expand">Register</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="intro-table intro-table-third">
-						<h5 class="white heading">Happy Clients</h5>
-						<div class="owl-testimonials bottom">
-							<div class="item">
-								<h4 class="white heading content">I couldn't be more happy with the results!</h4>
-								<h5 class="white heading light author">Adam Jordan</h5>
-							</div>
-							<div class="item">
-								<h4 class="white heading content">I can't believe how much better I feel!</h4>
-								<h5 class="white heading light author">Greg Pardon</h5>
-							</div>
-							<div class="item">
-								<h4 class="white heading content">Incredible transformation and I feel so healthy!</h4>
-								<h5 class="white heading light author">Christina Goldman</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="services" class="section section-padded">
-		<div class="container">
-			<div class="row text-center title">
-				<h2>Services</h2>
-				<h4 class="light muted">Achieve the best results with our wide variety of training options!</h4>
-			</div>
-			<div class="row services">
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="<?php echo base_url();?>assets/img/icons/heart-blue.png" alt="" class="icon">
-						</div>
-						<h4 class="heading">Cardio Training</h4>
-						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="<?php echo base_url();?>assets/img/icons/guru-blue.png" alt="" class="icon">
-						</div>
-						<h4 class="heading">Yoga Pilates</h4>
-						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="<?php echo base_url();?>assets/img/icons/weight-blue.png" alt="" class="icon">
-						</div>
-						<h4 class="heading">Power Training</h4>
-						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cut cut-bottom"></div>
-	</section>
-	<section id="team" class="section gray-bg">
-		<div class="container">
-			<div class="row title text-center">
-				<h2 class="margin-top">Team</h2>
-				<h4 class="light muted">We're a dream team!</h4>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background:url('<?php echo base_url();?>assets/img/team/team-cover1.jpg'); background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">$69.00</h3>
-								<h5 class="light light-white">1 - 5 sessions / month</h5>
-							</div>
-						</div>
-						<img src="<?php echo base_url();?>assets/img/team/team3.jpg" alt="Team Image" class="avatar">
-						<div class="title">
-							<h4>Ben Adamson</h4>
-							<h5 class="muted regular">Fitness Instructor</h5>
-						</div>
-						<button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">Sign Up Now</button>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background:url('<?php echo base_url();?>assets/img/team/team-cover2.jpg'); background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">$69.00</h3>
-								<h5 class="light light-white">1 - 5 sessions / month</h5>
-							</div>
-						</div>
-						<img src="<?php echo base_url();?>assets/img/team/team1.jpg" alt="Team Image" class="avatar">
-						<div class="title">
-							<h4>Eva Williams</h4>
-							<h5 class="muted regular">Personal Trainer</h5>
-						</div>
-						<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Sign Up Now</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background:url('<?php echo base_url();?>assets/img/team/team-cover3.jpg'); background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">$69.00</h3>
-								<h5 class="light light-white">1 - 5 sessions / month</h5>
-							</div>
-						</div>
-						<img src="<?php echo base_url();?>assets/img/team/team2.jpg" alt="Team Image" class="avatar">
-						<div class="title">
-							<h4>John Phillips</h4>
-							<h5 class="muted regular">Personal Trainer</h5>
-						</div>
-						<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Sign Up Now</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="pricing" class="section">
-		<div class="container">
-			<div class="row title text-center">
-				<h2 class="margin-top white">Pricing</h2>
-				<h4 class="light white">Choose your favorite pricing plan and sign up today!</h4>
-			</div>
-			<div class="row no-margin">
-				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
-					<div class="pricing">
-						<div class="box-main active" data-img="<?php echo base_url();?>assets/img/pricing1.jpg">
-							<h4 class="white">Yoga Pilates</h4>
-							<h4 class="white regular light">$850.00 <span class="small-font">/ year</span></h4>
-							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
-							<i class="info-icon icon_question"></i>
-						</div>
-						<div class="box-second active">
-							<ul class="white-list text-left">
-								<li>One Personal Trainer</li>
-								<li>Big gym space for training</li>
-								<li>Free tools &amp; props</li>
-								<li>Free locker</li>
-								<li>Free before / after shower</li>
-							</ul>
-						</div>
-					</div>
-					<div class="pricing">
-						<div class="box-main" data-img="img/pricing2.jpg">
-							<h4 class="white">Cardio Training</h4>
-							<h4 class="white regular light">$100.00 <span class="small-font">/ year</span></h4>
-							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
-							<i class="info-icon icon_question"></i>
-						</div>
-						<div class="box-second">
-							<ul class="white-list text-left">
-								<li>One Personal Trainer</li>
-								<li>Big gym space for training</li>
-								<li>Free tools &amp; props</li>
-								<li>Free locker</li>
-								<li>Free before / after shower</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section section-padded blue-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="owl-twitter owl-carousel">
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content modal-popup">
-				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
-				<h3 class="white">Sign Up</h3>
-				<form action="" class="popup-form">
-					<input type="text" class="form-control form-white" placeholder="Full Name">
-					<input type="text" class="form-control form-white" placeholder="Email Address">
-					<div class="dropdown">
-						<button id="dLabel" class="form-control form-white dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Pricing Plan
-						</button>
-						<ul class="dropdown-menu animated fadeIn" role="menu" aria-labelledby="dLabel">
-							<li class="animated lightSpeedIn"><a href="#">1 month membership ($150)</a></li>
-							<li class="animated lightSpeedIn"><a href="#">3 month membership ($350)</a></li>
-							<li class="animated lightSpeedIn"><a href="#">1 year membership ($1000)</a></li>
-							<li class="animated lightSpeedIn"><a href="#">Free trial class</a></li>
-						</ul>
-					</div>
-					<div class="checkbox-holder text-left">
-						<div class="checkbox">
-							<input type="checkbox" value="None" id="squaredOne" name="check" />
-							<label for="squaredOne"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
-						</div>
-					</div>
-					<button type="submit" class="btn btn-submit">Submit</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 text-center-mobile">
-					<h3 class="white">Reserve a Free Trial Class!</h3>
-					<h5 class="light regular light-white">Shape your body and improve your health.</h5>
-					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
-				</div>
-				<div class="col-sm-6 text-center-mobile">
-					<h3 class="white">Opening Hours <span class="open-blink"></span></h3>
-					<div class="row opening-hours">
-						<div class="col-sm-6 text-center-mobile">
-							<h5 class="light-white light">Mon - Fri</h5>
-							<h3 class="regular white">9:00 - 22:00</h3>
-						</div>
-						<div class="col-sm-6 text-center-mobile">
-							<h5 class="light-white light">Sat - Sun</h5>
-							<h3 class="regular white">10:00 - 18:00</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row bottom-footer text-center-mobile">
-				<div class="col-sm-8">
-					<p>&copy; 2015 All Rights Reserved. Powered by <a href="http://www.phir.co/">PHIr</a> exclusively for <a href="http://tympanus.net/codrops/">Codrops</a></p>
-				</div>
-				<div class="col-sm-4 text-right text-center-mobile">
-					<ul class="social-footer">
-						<li><a href="http://www.facebook.com/pages/Codrops/159107397912"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="http://www.twitter.com/codrops"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://plus.google.com/101095823814290637419"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Holder for mobile navigation -->
-	<div class="mobile-nav">
-		<ul>
-		</ul>
-		<a href="#" class="close-link"><i class="arrow_up"></i></a>
-	</div>
-	<!-- Scripts -->
-	<script src="<?php echo base_url();?>assets/js/jquery-1.11.1.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/owl.carousel.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/wow.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/typewriter.js"></script>
-	<script src="<?php echo base_url();?>assets/js/jquery.onepagenav.js"></script>
-	<script src="<?php echo base_url();?>assets/js/main.js"></script>
-</body>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success">
+                        This is a simple admin template that can be used for your small project or may be large projects. This is free for personal and commercial use.
+                    </div>
+                </div>
 
-</html>
+            </div>
+            <div class="row">
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="dashboard-div-wrapper bk-clr-one">
+                        <i  class="fa fa-venus dashboard-div-icon" ></i>
+                        <div class="progress progress-striped active">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+  </div>
+                           
+</div>
+                         <h5>Simple Text Here </h5>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="dashboard-div-wrapper bk-clr-two">
+                        <i  class="fa fa-edit dashboard-div-icon" ></i>
+                        <div class="progress progress-striped active">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+  </div>
+                           
+</div>
+                         <h5>Simple Text Here </h5>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="dashboard-div-wrapper bk-clr-three">
+                        <i  class="fa fa-cogs dashboard-div-icon" ></i>
+                        <div class="progress progress-striped active">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+  </div>
+                           
+</div>
+                         <h5>Simple Text Here </h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="dashboard-div-wrapper bk-clr-four">
+                        <i  class="fa fa-bell-o dashboard-div-icon" ></i>
+                        <div class="progress progress-striped active">
+  <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+  </div>
+                           
+</div>
+                         <h5>Simple Text Here </h5>
+                    </div>
+                </div>
+
+            </div>
+           
+            <div class="row">
+                <div class="col-md-6">
+                      <div class="notice-board">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                           Active  Notice Panel 
+                                <div class="pull-right" >
+                                    <div class="dropdown">
+  <button class="btn btn-success dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    <span class="glyphicon glyphicon-cog"></span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Refresh</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+  </ul>
+</div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                               
+                                <ul >
+                                   
+                                     <li>
+                                            <a href="#">
+                                     <span class="glyphicon glyphicon-align-left text-success" ></span> 
+                                                  Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                                 <span class="label label-warning" > Just now </span>
+                                            </a>
+                                    </li>
+                                     <li>
+                                          <a href="#">
+                                     <span class="glyphicon glyphicon-info-sign text-danger" ></span>  
+                                          Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                          <span class="label label-info" > 2 min chat</span>
+                                            </a>
+                                    </li>
+                                     <li>
+                                          <a href="#">
+                                     <span class="glyphicon glyphicon-comment  text-warning" ></span>  
+                                          Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                          <span class="label label-success" >GO ! </span>
+                                            </a>
+                                    </li>
+                                    <li>
+                                          <a href="#">
+                                     <span class="glyphicon glyphicon-edit  text-danger" ></span>  
+                                          Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                          <span class="label label-success" >Let's have it </span>
+                                            </a>
+                                    </li>
+                                   </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#" class="btn btn-default btn-block"> <i class="glyphicon glyphicon-repeat"></i> Just A Small Footer Button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="text-center alert alert-warning">
+                        <a href="#" class="btn btn-social btn-facebook">
+                            <i class="fa fa-facebook"></i>&nbsp; Facebook</a>
+                        <a href="#" class="btn btn-social btn-google">
+                            <i class="fa fa-google-plus"></i>&nbsp; Google</a>
+                        <a href="#" class="btn btn-social btn-twitter">
+                            <i class="fa fa-twitter"></i>&nbsp; Twitter </a>
+                        <a href="#" class="btn btn-social btn-linkedin">
+                            <i class="fa fa-linkedin"></i>&nbsp; Linkedin </a>
+                    </div>
+                     
+                    <hr />
+                     <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Ref. No.</th>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                            <th>Delivery On </th>
+                                            <th># #</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       
+                                        <tr>
+                                            <td># 2501</td>
+                                            <td>01/22/2015 </td>
+                                            <td>
+                                                <label class="label label-info">300 USD </label>
+                                            </td>
+                                            <td>
+                                                <label class="label label-success">Delivered</label></td>
+                                            <td>01/25/2015</td>
+                                             <td> <a href="#"  class="btn btn-xs btn-danger"  >View</a> </td>
+                                        </tr>
+                                        <tr>
+                                            <td># 15091</td>
+                                            <td>12/12/2014 </td>
+                                            <td>
+                                                <label class="label label-danger">7000 USD </label>
+                                            </td>
+                                            <td>
+                                                <label class="label label-warning">Shipped</label></td>
+                                            <td>N/A</td>
+                                             <td> <a href="#"  class="btn btn-xs btn-success"  >View</a> </td>
+                                        </tr>
+                                        <tr>
+                                            <td># 11291</td>
+                                            <td>12/03/2014 </td>
+                                            <td>
+                                                <label class="label label-warning">7000 USD </label>
+                                            </td>
+                                            <td>
+                                                <label class="label label-success">Delivered</label></td>
+                                            <td>01/23/2015</td>
+                                             <td> <a href="#"  class="btn btn-xs btn-primary"  >View</a> </td>
+                                        </tr>
+                                        <tr>
+                                            <td># 1808</td>
+                                            <td>11/10/2014 </td>
+                                            <td>
+                                                <label class="label label-success">2000 USD </label>
+                                            </td>
+                                            <td>
+                                                <label class="label label-info">Returned</label></td>
+                                            <td>N/A</td>
+                                             <td> <a href="#"  class="btn btn-xs btn-danger"  >View</a> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-danger">
+                        This is a simple admin template that can be used for your small project or may be large projects. This is free for personal and commercial use.
+                    </div>
+                    <hr />
+                     <div class="Compose-Message">               
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Compose New Message 
+                    </div>
+                    <div class="panel-body">
+                        
+                        <label>Enter Recipient Name : </label>
+                        <input type="text" class="form-control" />
+                        <label>Enter Subject :  </label>
+                        <input type="text" class="form-control" />
+                        <label>Enter Message : </label>
+                        <textarea rows="9" class="form-control"></textarea>
+                        <hr />
+                        <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-envelope"></span> Send Message </a>&nbsp;
+                      <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-tags"></span>  Save To Drafts </a>
+                    </div>
+                    <div class="panel-footer text-muted">
+                        <strong>Note : </strong>Please note that we track all messages so don't send any spams.
+                    </div>
+                </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php $this->load->view('global/footer.php');?>
+<script type="text/javascript">
+  $(document).ready(function() {
+	  $("#success-alert").fadeTo(1500, 500).slideUp(500, function(){("#success-alert").slideUp(500);
+		});
+	  $("#loginsuccess-alert").fadeTo(1500, 500).slideUp(500, function(){("#loginsuccess-alert").slideUp(500);
+		});
+  });                                      
+  </script>
